@@ -120,7 +120,8 @@ body {
   text-align: center;
   border-radius: 100%;
 }
-.note-modifier--delete:hover {
+.note-modifier--delete:hover,
+.note-modifier--delete:focus {
   background-color: var(--modifer-hover-color);
   color: white;
 }
