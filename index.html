@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>En | Notes</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" type="module"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<nav class="nav-bar">
+
+		<div class="container nav-container">
+			<div class="logo">En</div>
+			<input placeholder="Search for notes...." type="text" class="nav-search-bar">
+
+		</div>
+
+
+	</nav>
+	<section>
+		<div class="container main-container">
+			<div class="note-adder">
+				<p class="note-adder--title invisible" placeholder="title" contenteditable="true">Title...</p>
+				<div class="note-adder--desp " contenteditable="true">Take a note...</div>
+			</div>
+			<div main-note-list class="notes-list">
+				<!-- <div class="note">
+					<p class="note-title" placeholder="title">Title</p>
+					<div class="note-desp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem id
+						dignissimos voluptatibus vitae sapiente iusto eaque, perferendis hic architecto labore? Vitae
+						odit sequi doloribus numquam! Vitae inventore suscipit doloribus ipsum.</div>
+					<div class="note-modifier">
+						<div class="note-modifier--delete">
+							<i class="far fa-trash-alt delete"></i>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+
+	<div class="sidebar-container slider">
+		<div class="sidebar">
+			<ul class="sidebar-list">
+				<li class="sidebar-list--item">Productivity</li>
+				<li class="sidebar-list--item">Fiction</li>
+				<li class="sidebar-list--item">real</li>
+				<li class="sidebar-list--item">School</li>
+			</ul>
+		</div>
+		<div class="sidebar-toggle">
+			<i class="fas fa-angle-double-right"></i>
+		</div>
+
+	</div>
+	<div class="overlay invisible">
+
+		<div class="note-editor-modal">
+
+			<p contenteditable class="note-title-editor" placeholder="title">Title</p>
+			<div contenteditable class="note-desp-editor">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Dolor, deserunt
+				dicta aspernatur repellat, minus officiis ut fugiat dignissimos aliquid quod sequi pariatur
+				error eos consequatur beatae, cumque magnam dolore in! Labore, id eaque explicabo praesentium
+				dolores natus cupiditate, exercitationem odio voluptates, velit facere neque ad et nulla
+				nesciunt asperiores magnam?</div>
+
+		</div>
+	</div>
+
+
+	<template list-note-template>
+		<div list-note-main id="1" class="note">
+			<p list-note-title class="note-title" placeholder="title">Title</p>
+			<div list-note-desp class="note-desp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+				id
+				dignissimos voluptatibus vitae sapiente iusto eaque, perferendis hic architecto labore? Vitae
+				odit sequi doloribus numquam! Vitae inventore suscipit doloribus ipsum.</div>
+			<div class="note-modifier">
+				<div class="note-modifier--delete">
+					<i class="far fa-trash-alt delete"></i>
+				</div>
+			</div>
+		</div>
+	</template>
+</body>
+
+</html>
