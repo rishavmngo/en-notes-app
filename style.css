@@ -5,6 +5,7 @@
   --logo-background: #333;
   --modifer-hover-color: var(--main-color);
 }
+
 * {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -42,6 +43,7 @@ body {
   font-weight: bold;
   border: 3px solid rgb(241, 241, 241);
   padding: 2px;
+  transition: background 1s linear;
 }
 .logo:hover {
   background-color: var(--logo-background);
@@ -216,6 +218,7 @@ body {
   display: flex;
   align-items: center;
   pointer-events: none;
+  transition: transform 0.2s linear;
 }
 .sidebar {
   height: 500px;
@@ -269,7 +272,7 @@ body {
   color: white;
 }
 .slider {
-  left: -150px;
+  transform: translateX(-150px);
 }
 
 .invisible {
